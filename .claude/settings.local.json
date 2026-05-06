@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Bash(npx vite *)",
+      "Bash(npm run *)",
+      "Bash(taskkill /PID 26108 /F)",
+      "PowerShell(taskkill /PID 26108 /F)",
+      "Bash(node -e \"const p = require\\('puppeteer'\\); console.log\\(p.executablePath ? p.executablePath\\(\\) : 'no executablePath'\\)\")",
+      "Bash(node -e \"require\\('./src/utils/generateIDCard'\\); require\\('./src/routes/pdf'\\); console.log\\('OK'\\)\")",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "PowerShell($backendPid = \\(netstat -ano | findstr \":5000\" | findstr \"LISTENING\" | ForEach-Object { \\($_ -split '\\\\s+'\\)[-1] } | Select-Object -First 1\\); if \\($backendPid\\) { taskkill /PID $backendPid /F 2>&1 })",
+      "Bash(cd /d D:\\\\IDcard)",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(exit 0)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5000/api/auth/me)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080)"
+    ]
+  }
+}
